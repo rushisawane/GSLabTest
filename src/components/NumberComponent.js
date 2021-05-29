@@ -4,13 +4,13 @@ import {View,Text,TouchableOpacity,StyleSheet} from 'react-native';
 const NumberComponent = (props) => {
     
     return(
-        <View>
-            <TouchableOpacity onPress={()=>props.onSelectNumber(props.id)}>
+        // <View>
+             <TouchableOpacity onPress={()=>props.onSelectNumber(props.id)}>
                 <Text style={[styles.numTextStyle, { fontWeight:props.numselected===props.id?'bold':null }]}>
                     {props.num}
                 </Text>
-            </TouchableOpacity>
-        </View>
+             </TouchableOpacity>
+        // </View>
     )
 }
 
@@ -23,12 +23,6 @@ const styles = StyleSheet.create({
         fontSize:25,
         padding:10,
         color:'white'
-    },
-    numTextStyle2:{
-        fontSize:25,
-        padding:10,
-        color:'white',
-        fontWeight:'bold'
     }
 })
 
